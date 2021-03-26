@@ -1,150 +1,249 @@
-
-
-
 body {
-  background: #EAF6F6;
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align:center;
-}
-
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
+  font-family: "Montserrat-Bold";
   text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
+h1, h2,h3, h4, h5, h6  {
+  font-family: "Montserrat-Bold";
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+p{
+  color:#8f8f8f;
 }
 
 
-/*--Header--*/
-.intro_container {
-  position: relative;
-  /*border: 3px solid #73AD21;*/
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+/* *********************************** container ******************************************************************** */
+.container-fluid{
+  padding: 7% 15%;
+}
+/* *********************************** container ******************************************************************** */
+
+
+/* *********************************** section ******************************************************************** */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
 }
 
-.intro_1 {
-  position: relative;
-  left: 15%;
-  padding-left:10px;
-  /*border: 3px solid #73AD21;*/
+.white-section {
+  background-color: #fff;
+}
+/* *********************************** section ******************************************************************** */
+
+
+/* *********************************** Heading ******************************************************************** */
+.big-heading{
+  font-family: "Montserrat-Black";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.underline-heading{
+  text-decoration: underline;
+}
+
+.section-underline-heading{
+  padding-top: 3%;
+  text-decoration: underline;
 }
 
 
-img.icon {
+/* *********************************** Heading ******************************************************************** */
+
+
+/* ***********************************  navigation bar ******************************************************************** */
+.navbar{
+  padding:0 0.5rem 2rem;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size:2.5rem;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Montserrat-light';
+}
+/* ***********************************  navigation bar ******************************************************************** */
+
+
+/* ***********************************  title ******************************************************************** */
+#title{
+  padding: 3% 7% 15%;
+  text-align: left;
+}
+
+.title-image{
+  width:80%;
+  margin-left: 30%;
   border-radius: 50%;
 }
+/* ***********************************  title ******************************************************************** */
 
 
-/*--self-intro--*/
 
-.self-intro_container{
-  position: relative;
-  margin: 10px 0px 0px 0px;
-  left:5%;
-  width:90%;
-  border: 3px solid #73AD21;
+
+/* *********************************** About Me ******************************************************************** */
+.about-me-box-1 {
+  padding: 4.5%;
 }
 
-.card_self-intro{
-  position: relative;
-  margin: 10px 0px 0px 0px;
-  border: 3px solid #73AD21;
+.about-me-box-2 {
+  padding: 4.5%;
+  text-align: left;
+  line-height: 1.5;
+}
+/* *********************************** About Me ******************************************************************** */
+
+/* ***********************************  CV ******************************************************************** */
+#cv{
+  background-color: #ef8172;
 }
 
-.main_self-intro{
-  position: relative;
-  margin: 10px 0px 0px 0px;
-  border: 3px solid #73AD21;
+#cv .container-fluid{
+  padding: 10% 10%;
 }
+
+table{
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 5%;
+  font-size: 1rem;
+}
+
+
+/* ***********************************  CV ******************************************************************** */
+
+
+
+/* ***********************************  My Hobbies ******************************************************************** */
+
+.hobbies-box {
+  padding: 4.5%;
+}
+
+.hobbies-title{
+  line-height: 1.5;
+}
+
+.icon{
+  color:#ef8172;
+  margin-bottom:1rem;
+}
+
+.icon:hover{
+  color: #ff4c68;
+}
+/* ***********************************  My Hobbies ******************************************************************** */
+
+
+/* *********************************** Basketball ******************************************************************** */
+#basketball{
+  background-color: #ef8172;
+}
+
+#basketball-carousel .container-fluid{
+  padding: 0 15%;
+}
+
+.basketball-text{
+  font-size: 1rem;
+  color: #fff;
+}
+
+.basketball-image{
+  width: 80%;
+  padding-top:5%;
+}
+/* *********************************** Basketball ******************************************************************** */
+
+
+
+/* *********************************** Taekwondo ******************************************************************** */
+
+#taekwondo-carousel .container-fluid{
+  padding: 0 15% 3%;
+}
+
+.taekwondo-text{
+  font-size: 1rem;
+}
+
+.taekwondo-image{
+  width: 60%;
+  padding-top:5%;
+}
+/* *********************************** Taekwondo ******************************************************************** */
+
+
+/* *********************************** Travel ******************************************************************** */
+#travel{
+  background-color: #ef8172;
+}
+
+#travel-carousel .container-fluid{
+  padding: 0 15% 3%;
+}
+
+.travel-text{
+  font-size: 1rem;
+  color: #fff;
+
+}
+
+.travel-image{
+  width: 40%;
+  padding-top:5%;
+}
+/* *********************************** Travel ******************************************************************** */
+
+
+
+/* *********************************** footer ******************************************************************** */
+#footer{
+  padding: 3% 5%;
+}
+.social-icon{
+  color: #000;
+  margin: 20px 10px;
+}
+/* *********************************** footer ******************************************************************** */
+
+
+/* *********************************** media query ******************************************************************** */
+@media (max-width:770px) {
+
+.about-me-box-1 {
+    padding: 20% 20%;
+  }
+
+}
+
+@media (max-width:1000px) {
+  #title {
+    text-align: center;
+    padding: auto 3%;
+  }
+
+  .title-image {
+    margin-left: 0;
+    width: 80%;
+  }
+
+.about-me-box-2 {
+    text-align: center;
+  }
+
+}
+/* *********************************** max-width:1000px ******************************************************************** */
